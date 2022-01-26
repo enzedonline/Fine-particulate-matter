@@ -22,7 +22,7 @@ total_PM2.5_by_year <- NEI %>%
 
 # use ggplot col graph, grid 2 wide, graphs grouped by fip, each graph own scale
 # output to png
-png('plot6.png', width = 480, height = 480)
+png('plot6.png', width = 480, height = 240)
 
 ggplot(total_PM2.5_by_year, aes(as.factor(year), total)) +
   facet_wrap(. ~ fips, ncol = 2, scales="free") +
